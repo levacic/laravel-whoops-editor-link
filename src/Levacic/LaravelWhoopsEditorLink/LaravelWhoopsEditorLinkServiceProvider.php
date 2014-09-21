@@ -19,6 +19,10 @@ class LaravelWhoopsEditorLinkServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('levacic/laravel-whoops-editor-link', 'levacic/laravel-whoops-editor-link');
+
+		$config = $this->app['config']->get('levacic/laravel-whoops-editor-link::path');
+
+		$this->fixPrettyWhoopsHandlerEditor($config['host'], $config['guest']);
 	}
 
 	/**
@@ -26,12 +30,7 @@ class LaravelWhoopsEditorLinkServiceProvider extends ServiceProvider {
 	 *
 	 * @return void
 	 */
-	public function register()
-	{
-		$config = $this->app['config']->get('levacic/laravel-whoops-editor-link::path');
-
-		$this->fixPrettyWhoopsHandlerEditor($config['host'], $config['guest']);
-	}
+	public function register() {}
 
 	/**
 	 * Fixes the editor for the whoops pretty page handler, so that it links
