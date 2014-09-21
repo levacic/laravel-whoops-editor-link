@@ -1,0 +1,28 @@
+{
+    "name": "levacic/laravel-whoops-editor-link",
+    "description": "Fixed the Sublime editor link path when running a project from a VM",
+    "keywords": [
+        "laravel",
+        "whoops",
+        "editor",
+        "sublime",
+        "vagrant"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milos Levacic",
+            "email": "milos@levacic.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Levacic\\LaravelWhoopsEditorLink\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
