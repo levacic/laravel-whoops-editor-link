@@ -13,7 +13,7 @@ In your project root, do this:
 composer require levacic/laravel-whoops-editor-link:~1
 ```
 
-Alternatively, you may specify whichever package version is currently available when you install the package, e.g. `~1.0.2`.
+Alternatively, you may specify whichever package version is currently available when you install the package, e.g. `~1.0.3`.
 
 After that, publish the configuration file:
 
